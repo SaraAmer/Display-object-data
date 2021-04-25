@@ -16,9 +16,9 @@ class Data extends React.Component{
   constructor()
   {
     super();
-  this.state=
+  this.data=
   {
-    "data":{
+    
      "id":"1",
      "jobTitleName":"Developer",
      "firstName":"Ahmed",
@@ -28,11 +28,11 @@ class Data extends React.Component{
      "region":"CA",
      "phoneNumber":"408-1234567",
      "emailAddress":" ahmed.ali @gmail.com"
-     }
+     
    }}
   render()
   {
-   const list = Object.keys(this.state.data).map((key , index) =>{
+   const list = Object.keys(this.data).map((key) =>{
       console.log(key)
       return (
         <div>
@@ -44,7 +44,7 @@ class Data extends React.Component{
  
     </tr>
     <tr>
-      <td>{this.state.data[key]}</td>     
+      <td>{this.data[key]}</td>     
       
     </tr>
     <tr></tr>
